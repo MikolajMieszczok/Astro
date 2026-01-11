@@ -22,7 +22,7 @@ pathlib.PosixPath = pathlib.WindowsPath
 # -------------------------------------------------
 Authentication.login("TheOathbringer", "JamnikLover2137!")
 
-client = Groq(api_key="Podaj klucz API gorqa")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 model = YOLO("../SciScript-Python/best.pt")
 
